@@ -1,0 +1,103 @@
+    /*.img{
+      background-image: url(new-assignment/img/lake.jpg);
+      height: 100%;
+      opacity: 0.7;
+      z-index: -1
+    }*/
+    @media only screen and (min-width: 768px) {
+      #id {
+        background-color: lightblue;
+        text-decoration: underline;
+      }
+    }
+    
+    .btn {
+      border-radius: 5px !important
+    }
+    .top-nav-collapse {
+    background-color: #24355C;
+  }
+    .over-lay{
+      background: rgba(51, 51, 51, 0.7);
+    }
+    .top-nav-collapse {
+      background-color: #24355C;
+  }
+  .carousel-indicators li{
+      height: 10px !important;
+      width: 10px !important;
+      border-radius: 50% !important;
+    }
+    
+html,
+body,
+header,
+.intro {
+    height: 95%;
+} 
+/**{
+  width: 100%
+}*/
+  .intro {
+    background: url(img-chosen-one.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+     height: 100%;
+  }
+
+  #link:hover {
+  background: rgb(238, 199, 71) !important; 
+  /* background-color:  !important; */
+    border-radius: 10px;
+  }
+
+  a {
+    background-color: red;
+  }
+  #img:hover {
+    /* background-color: blanchedalmond; */
+    animation: jumper !important;
+}
+@keyframes jumper {
+0% {
+opacity: 0;
+}
+50% {
+opacity: 0.5;
+}
+100% {
+opacity: 1;
+}
+}
+* {
+  /* width: 100%; */
+}
+.btn-theme {
+  background-color: rgb(255, 208, 0) !important; 
+}
+
+.bg-theme{
+  color: rgb(255, 208, 0) !important; 
+  background-color: rgb(255, 208, 0);
+}
+.bg-theme-footer {
+  border: rgb(255, 208, 0), solid, 2px;
+}
+.link-hover:hover {
+  /* color: rgb(243, 187, 0) !important; */
+  /* border-radius: 10px !important; */
+}
+img:hover {
+  /* opacity: 0.7 !important; */
+  /* display: flex; */
+  /* position: absolute; */
+  /* width: 100%; */
+  /* height: 100%; */
+  background: rgba(254, 209, 54, 0.9) !important;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: opacity ease-in-out 0.25s;
+}

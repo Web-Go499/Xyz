@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<label>Input 1st Number:</label>
+	<input type="number" name="name" placeholder="input number" id="demo"><br><br>
+	<label>Input 2nd Number:</label>
+	<input type="number" name="name" placeholder="input number" id="demo1"><br><br>
+	<label>Input 3rd Number:</label>
+	<input type="number" name="" placeholder="input number" id="demo2"><br><br>
+	<label>Input 4th Number:</label>
+	<input type="number" name="" placeholder="input number" id="demo3"><br><br>
+	<label>Input 5th Number:</label>
+	<input type="number" name="" placeholder="input number" id="demo4">
+	<button onclick="myFunction()">arrange in ascending order</button>
+	<button onclick="myFunction2()">arrange in descending order</button>
+	<p id="result"></p>
+	<script type="text/javascript">
+		
+		function myFunction()	{
+			var result = [document.getElementById('demo').value,
+					 document.getElementById('demo1').value,
+					 document.getElementById('demo2').value,
+					 document.getElementById('demo3').value,
+					 document.getElementById('demo4').value,];	
+					 	result.sort(function(a, b){return a - b});
+					 	var i;
+for (i=0; i<result.length; i++3){	
+	document.getElementById('result').innerHTML += result[i] + " "
+}
+		}		
+		function myFunction2()	{
+			var result = [document.getElementById('demo').value,
+					 document.getElementById('demo1').value,
+					 document.getElementById('demo2').value,
+					 document.getElementById('demo3').value,
+					 document.getElementById('demo4').value,];	
+					 	result.sort(function(a, b){return b - a});
+					 	var i;
+for (i=0; i<result.length; i++){	
+	document.getElementById('result').innerHTML += result[i] + " "
+}
+		};	  
+	</script>
+</body>
+</html>
